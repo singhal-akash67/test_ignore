@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sweekar.sample.Register">
+    <TextView
+        android:id="@+id/hawker_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Registration"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <EditText
+        android:id="@+id/hawkerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hawker_id_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Vendor ID"
+        android:inputType="text"
+        android:textColorLink="#ffffff"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="16dp" />
+    <EditText
+        android:id="@+id/hawkername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hawkerid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorLink="#ffffff" />
+    <Spinner
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hawkername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColorLink="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phonenumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Mobile No."
+        android:inputType="phone"
+        android:textColorLink="#ffffff"
+        android:layout_below="@+id/area"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hawkername"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:background="#4ccccc"
+            >
+
+    <Button
+        android:id="@+id/secondpage"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:onClick="next"
+        android:background="#4ccccc"
+        android:text="Next  >"
+        android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

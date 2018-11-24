@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.sweekar.sample.Register">
+
+<TextView
+    android:id="@+id/register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:text="Registration"
+    android:textColor="#000000"
+    android:textSize="18dp"
+    />
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/gender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:layout_below="@+id/register">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/male"
+                    android:checked="true"
+                    android:textSize="18sp"
+                    android:layout_marginRight="40dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="18sp"
+                    android:id="@+id/female"
+                    />
+        </RadioGroup>
+
+<Spinner
+    android:id="@+id/experience"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/gender"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:ems="10"
+    android:gravity="center"
+    android:hint="Experience"
+    android:inputType="text"
+    android:textColorLink="#ffffff" />
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/totalexpectedcustomers"
+    android:layout_below="@+id/experience"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:ems="10"
+    android:gravity="center"
+    android:hint="Total Expected Customers"
+    android:inputType="text"
+    android:textColorLink="#ffffff"/>
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/repeatexpectedcustomers"
+    android:layout_below="@+id/totalexpectedcustomers"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:ems="10"
+    android:gravity="center"
+    android:hint="Repeat Expected Customers"
+    android:inputType="text"
+    android:textColorLink="#ffffff" />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="submit"
+            android:layout_centerHorizontal="true"
+            android:background="#4ccccc"
+            android:text="Submit"
+            android:layout_alignParentBottom="true"
+            android:textColor="#000000" />
+</RelativeLayout>

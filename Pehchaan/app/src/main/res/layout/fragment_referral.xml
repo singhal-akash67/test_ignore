@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ReferralFragment"
+    android:background="@drawable/referralbackground"
+    android:padding="20dp"
+    android:layout_margin="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        android:weightSum="10"
+        android:id="@+id/referredby"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:src="@drawable/bag"
+            android:alpha="0.6"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="6"
+            android:background="#ffffff"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Referred By"
+            android:inputType="number"
+            android:id="@+id/referredbyeditbox"
+            android:textSize="20sp"
+            android:textColor="#f4910f"
+            android:textStyle="bold"
+
+
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/line"
+        android:id="@+id/line"
+        android:layout_below="@+id/referredby"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:weightSum="10"
+        android:id="@+id/referredto"
+        android:layout_below="@+id/line"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+
+
+            android:layout_weight="4"
+            android:src="@drawable/bag"
+            android:alpha="0.6"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="6"
+            android:background="#ffffff"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Referred To"
+            android:inputType="number"
+            android:id="@+id/referredtoeditbox"
+            android:textSize="20sp"
+            android:textColor="#4ccccc"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/referredto"
+        android:id="@+id/submitreferral"
+        android:text="Done"
+        android:layout_margin="5dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

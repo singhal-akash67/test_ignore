@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manageorders"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/manageorders"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ordersremainingtext"
+            android:text="Orders Remainging"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ordersremaining"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nextdatetext"
+            android:layout_margin="15dp"
+            android:text="Next Date"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nextdate"
+            android:layout_margin="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/preferences"
+            android:orientation="vertical"
+            >
+
+        <CheckBox
+            android:id="@+id/Monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <CheckBox
+            android:id="@+id/Tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+             />
+
+        <CheckBox
+            android:id="@+id/Wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+        <CheckBox
+            android:id="@+id/Thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thursday" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Friday"
+            android:text="Friday"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cancelfortomorrow"
+            android:enabled="false"
+            android:text="Cancel for tomorrow"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:background="#4ccccc"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">500658580462-s5emr8prnvungad3a60dvc2869feb1mg.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://pehchaan-f3f07.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">500658580462</string>
+    <string name="google_api_key" translatable="false">AIzaSyAd76yO5sEWViQuU1uNKB9jpw0dQ3z2Ckc</string>
+    <string name="google_app_id" translatable="false">1:500658580462:android:02960ffd6c7553e3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAd76yO5sEWViQuU1uNKB9jpw0dQ3z2Ckc</string>
+    <string name="google_storage_bucket" translatable="false">pehchaan-f3f07.appspot.com</string>
+    <string name="project_id" translatable="false">pehchaan-f3f07</string>
+</resources>

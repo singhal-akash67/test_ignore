@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView android:textSize="18.0dip"
+
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dip"
+        android:text="Login"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+
+        android:gravity="center"
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:hint="Mobile No."
+        android:ems="10"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_below="@id/phonenumber"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:gravity="right"
+            android:background="#4ccccc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0"
+            android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <Button
+                android:textColor="#000000"
+                android:id="@+id/otppage"
+                android:background="#4ccccc"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Next >"
+                android:layout_weight="0.5"
+                android:onClick="otpscreen"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

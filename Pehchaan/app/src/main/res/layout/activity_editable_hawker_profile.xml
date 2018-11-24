@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp">
+    <TextView
+        android:id="@+id/Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="You can edit your details Here"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/profilepicture"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:onClick="takeprofilepicture"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilepicture"
+            android:id="@+id/namecontainer"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Name :"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:ems="10"/>
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_weight="0.7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColorLink="#ffffff"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namecontainer"
+            android:id="@+id/experiencecontainer"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Exp :"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:ems="10"/>
+
+
+            <Spinner
+                android:id="@+id/experience"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:inputType="text"
+                android:textColorLink="#ffffff"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/gender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:layout_below="@+id/experiencecontainer"
+            >
+            <RadioButton android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="true"
+                android:textSize="18sp"
+                android:layout_marginRight="40dp"/>
+            <RadioButton android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="18sp"
+                />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:id="@+id/mobilecontainer"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Mobile :"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:ems="10"/>
+
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:textSize="20sp"
+
+                android:gravity="center"
+                android:inputType="text"
+                android:textColorLink="#ffffff"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobilecontainer"
+            android:id="@+id/areacontainer"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Area :"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:ems="10"/>
+
+        <Spinner
+            android:id="@+id/area"
+            android:textSize="20sp"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobilecontainer"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColorLink="#ffffff"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="submit"
+        android:layout_centerHorizontal="true"
+        android:background="#4ccccc"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+</RelativeLayout>

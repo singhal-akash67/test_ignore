@@ -1,0 +1,4 @@
+#Sat Aug 25 15:25:44 IST 2018
+base.0=/home/akash/AndroidStudioProjects/Pehchaan/app/build/intermediates/transforms/dexMerger/debug/894
+path.0=classes.dex
+renamed.0=classes.dex

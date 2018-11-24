@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1047082479967",
+    "firebase_url": "https://customerside-907a7.firebaseio.com",
+    "project_id": "customerside-907a7",
+    "storage_bucket": "customerside-907a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047082479967:android:1b5e9caa5ad71dd3",
+        "android_client_info": {
+          "package_name": "com.example.akash.customerside"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047082479967-u8c54bi2b9l966vrbogtvqq6aia7rl9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCHVVBiOOvAc-GJ2oFj8GnFpLmXaA3YBQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

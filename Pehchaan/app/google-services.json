@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "500658580462",
+    "firebase_url": "https://pehchaan-f3f07.firebaseio.com",
+    "project_id": "pehchaan-f3f07",
+    "storage_bucket": "pehchaan-f3f07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500658580462:android:02960ffd6c7553e3",
+        "android_client_info": {
+          "package_name": "com.example.sweekar.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500658580462-s5emr8prnvungad3a60dvc2869feb1mg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd76yO5sEWViQuU1uNKB9jpw0dQ3z2Ckc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

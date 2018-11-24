@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Sample</string>
+    <string name="title_activity_menue">Menue</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="areastring">
+        <item>Default</item>
+        <item>Sai Nath chowk</item>
+        <item>Wadala</item>
+        <item>Mumbai Naka</item>
+        <item>BadraKali</item>
+        <item>Ravivar Karanja</item>
+        <item>Panchvati</item>
+    </string-array>
+    <string-array name="imagestring">
+        <item>Gallery</item>
+        <item>Camera</item>
+    </string-array>
+    <string-array name="experiencestring">
+        <item>1 वर्षापेक्षा कमी</item>
+        <item>3 वर्षापेक्षा कमी</item>
+        <item>5 वर्षापेक्षा कमी</item>
+        <item>10 वर्षापेक्षा कमी</item>
+        <item>15 वर्षापेक्षा कमी</item>
+        <item>15 वर्षांपेक्षा अधिक</item>
+    </string-array>
+    <string name="title_activity_night_alarm">NightAlarm</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_editable_hawker_profile">EditableHawkerProfile</string>
+
+</resources>

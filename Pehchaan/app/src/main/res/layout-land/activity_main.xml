@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sale1"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/right_top_1"
+                    android:gravity="center"
+                    android:text="Hello"
+                    android:textColor="#f4910f"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/right_top_2"
+                    android:gravity="center"
+                    android:text="Hello"
+                    android:textColor="#3f9e9c"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="144dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="   Bag No."
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/sale"
+                    android:layout_width="144dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="8dp"
+
+                    android:layout_marginTop="8dp"
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="   Sales"
+                    android:inputType="number" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ScrollView android:id="@+id/Scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/apple"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#eeeeee"
+                    android:src="@drawable/apple"/>
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="80dp"
+                    android:background="#eeeeee"
+                    android:src="@drawable/banana"/>
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="80dp"
+                    android:background="#eeeeee"
+                    android:src="@drawable/proe"/>
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#eeeeee"
+                    android:src="@drawable/orange"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#eeeeee"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/greengrapes"/>
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/watermelon"/>
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/mango"/>
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/chikoo"
+                    android:background="@drawable/chikoo"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:background="#eeeeee"
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/mosambi"
+                    android:background="#eeeeee"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/mosambi"/>
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:id="@+id/musk"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="80dp"
+                    android:background="#eeeeee"
+                    android:src="@drawable/muskmelon"/>
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#4ccccc"
+        android:text="Submit"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+

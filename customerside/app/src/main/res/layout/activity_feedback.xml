@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:gravity="center"
+        android:id="@+id/feedbackform"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/feedbackform"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:weightSum="3">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/notsatisfiedsmiley"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/happysmiley"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/lovingsmiley"/>
+
+            </LinearLayout>
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:gravity="center"
+                android:padding="20dp"
+                android:id="@+id/emoticonvalue">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/notsatisfied"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/satisfied"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/lovedit"/>
+
+
+            </RadioGroup>
+        </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="complaints"
+                android:background="@drawable/blackboundary"
+                android:layout_margin="10dp"
+                android:id="@+id/textualfeedback"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:background="@color/colorPrimary"
+        android:id="@+id/submitfeedback"/>
+
+
+
+</RelativeLayout>
