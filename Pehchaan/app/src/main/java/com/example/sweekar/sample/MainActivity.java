@@ -436,6 +436,41 @@ public class MainActivity extends AppCompatActivity implements ReferralFragment.
                       imageView.setImageResource(R.drawable.cucumber);
 
                   }
+                  else if(fruitsname.equalsIgnoreCase("tomato")) {
+                      imageView.setImageResource(R.drawable.tomato);
+
+                  }else if(fruitsname.equalsIgnoreCase("ladyfinger")) {
+                      imageView.setImageResource(R.drawable.ladyfinger);
+
+                  }
+                  else if(fruitsname.equalsIgnoreCase("mushroom")) {
+                      imageView.setImageResource(R.drawable.mushroom);
+
+                  }
+                  else if(fruitsname.equalsIgnoreCase("potato")) {
+                      imageView.setImageResource(R.drawable.potato);
+
+                  }else if(fruitsname.equalsIgnoreCase("masala")) {
+                      imageView.setImageResource(R.drawable.masala);
+
+                  }else if(fruitsname.equalsIgnoreCase("moli")) {
+                      imageView.setImageResource(R.drawable.moli);
+
+                  }else if(fruitsname.equalsIgnoreCase("turai")) {
+                      imageView.setImageResource(R.drawable.turai);
+
+                  }else if(fruitsname.equalsIgnoreCase("simlamirchi")) {
+                      imageView.setImageResource(R.drawable.simlamirchi);
+
+                  }
+                  else if(fruitsname.equalsIgnoreCase("corn")) {
+                      imageView.setImageResource(R.drawable.corn);
+
+                  }
+                  else if(fruitsname.equalsIgnoreCase("pumpkin")) {
+                      imageView.setImageResource(R.drawable.pumpkin);
+
+                  }
                   imageView.setOnClickListener(new View.OnClickListener() {
                       @Override
                       public void onClick(View view) {

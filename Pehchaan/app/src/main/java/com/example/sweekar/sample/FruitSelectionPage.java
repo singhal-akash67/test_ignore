@@ -907,7 +907,303 @@ public class FruitSelectionPage extends AppCompatActivity {
                 onion.setBackgroundResource(R.drawable.background);
             }
 
+            ImageView corn = new ImageView(this);
+            corn.setImageResource(R.drawable.corn);
+            corn.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            corn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("corn");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout4.addView(corn);
+            if (initialfruits.contains("corn")) {
+                e.add("corn");
+                corn.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView ladyfinger = new ImageView(this);
+            ladyfinger.setImageResource(R.drawable.ladyfinger);
+            ladyfinger.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            ladyfinger.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("ladyfinger");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout4.addView(ladyfinger);
+            if (initialfruits.contains("ladyfinger")) {
+                e.add("ladyfinger");
+                ladyfinger.setBackgroundResource(R.drawable.background);
+            }
+
+
             parent.addView(linearLayout4);
+
+
+
+
+            LinearLayout linearLayout5 = new LinearLayout(this);
+            linearLayout5.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayout5.setWeightSum(8.0f);
+            linearLayout5.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+            ImageView cucumber = new ImageView(this);
+            cucumber.setImageResource(R.drawable.cucumber);
+            cucumber.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            cucumber.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("cucumber");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout5.addView(cucumber);
+            if (initialfruits.contains("cucumber")) {
+                e.add("cucumber");
+                cucumber.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView gilki = new ImageView(this);
+            gilki.setImageResource(R.drawable.gilki);
+            gilki.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            gilki.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("gilki");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout5.addView(gilki);
+            if (initialfruits.contains("gilki")) {
+                e.add("gilki");
+                gilki.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView masala = new ImageView(this);
+            masala.setImageResource(R.drawable.masala);
+            masala.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            masala.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("masala");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout5.addView(masala);
+            if (initialfruits.contains("masala")) {
+                e.add("masala");
+                masala.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView moli = new ImageView(this);
+            moli.setImageResource(R.drawable.moli);
+            moli.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            moli.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("moli");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout5.addView(moli);
+            if (initialfruits.contains("moli")) {
+                e.add("moli");
+                moli.setBackgroundResource(R.drawable.background);
+            }
+
+
+            parent.addView(linearLayout5);
+
+
+            LinearLayout linearLayout6 = new LinearLayout(this);
+            linearLayout6.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayout6.setWeightSum(8.0f);
+            linearLayout6.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+            ImageView mushroom = new ImageView(this);
+            mushroom.setImageResource(R.drawable.mushroom);
+            mushroom.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            mushroom.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("mushroom");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout6.addView(mushroom);
+            if (initialfruits.contains("mushroom")) {
+                e.add("mushroom");
+                mushroom.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView potato = new ImageView(this);
+            potato.setImageResource(R.drawable.potato);
+            potato.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            potato.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("potato");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout6.addView(potato);
+            if (initialfruits.contains("potato")) {
+                e.add("potato");
+                potato.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView pumpkin = new ImageView(this);
+            pumpkin.setImageResource(R.drawable.pumpkin);
+            pumpkin.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            pumpkin.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("pumpkin");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout6.addView(pumpkin);
+            if (initialfruits.contains("pumpkin")) {
+                e.add("pumpkin");
+                pumpkin.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView simlamirchi = new ImageView(this);
+            simlamirchi.setImageResource(R.drawable.simlamirchi);
+            simlamirchi.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            simlamirchi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("simlamirchi");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout6.addView(simlamirchi);
+            if (initialfruits.contains("simlamirchi")) {
+                e.add("simlamirchi");
+                simlamirchi.setBackgroundResource(R.drawable.background);
+            }
+
+            parent.addView(linearLayout6);
+
+
+
+            LinearLayout linearLayout7 = new LinearLayout(this);
+            linearLayout7.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayout7.setWeightSum(8.0f);
+            linearLayout7.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+            ImageView tomato = new ImageView(this);
+            tomato.setImageResource(R.drawable.tomato);
+            tomato.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            tomato.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("tomato");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout7.addView(tomato);
+            if (initialfruits.contains("tomato")) {
+                e.add("tomato");
+                tomato.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView turai = new ImageView(this);
+            turai.setImageResource(R.drawable.turai);
+            turai.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            turai.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("turai");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout7.addView(turai);
+            if (initialfruits.contains("turai")) {
+                e.add("turai");
+                potato.setBackgroundResource(R.drawable.background);
+            }
+
+
+
+
+            parent.addView(linearLayout7);
 
         }
 

@@ -25,19 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_register.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="92" column="39" lean-forward="false" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="activity_fruit_selection_page.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fruit_selection_page.xml">
           <provider editor-type-id="android-designer2">
@@ -51,14 +38,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FruitSelectionPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/FruitSelectionPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="38" column="79" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="79" />
+              <folding>
+                <element signature="e#45457#45881#0" expanded="true" />
+                <element signature="e#45880#45881#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="60" column="37" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+            <state relative-caret-position="506">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,8 +67,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="581" column="60" lean-forward="false" selection-start-line="581" selection-start-column="60" selection-end-line="581" selection-end-column="60" />
+            <state relative-caret-position="160">
+              <caret line="446" column="68" lean-forward="false" selection-start-line="446" selection-start-column="68" selection-end-line="446" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -155,6 +155,9 @@
     <findStrings>
       <find>addha</find>
       <find>orange</find>
+      <find>cucu</find>
+      <find>mas</find>
+      <find>mushro</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -2195,7 +2198,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/Databaseh.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/Register.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/FruitSelectionPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editable_hawker_profile.xml" />
@@ -2204,9 +2206,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/registerationpart2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/drawer_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_fruit_selection_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/FruitSelectionPage.java" />
       </list>
     </option>
   </component>
@@ -2278,7 +2281,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="8cf90f50" />
+    <property name="device.picker.selection" value="4.7_WXGA_API_28" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2491,7 +2494,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="e#45457#45881#0" expanded="true" />
+            <element signature="e#45880#45881#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2534,14 +2540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5310">
           <caret line="365" column="239" lean-forward="false" selection-start-line="365" selection-start-column="239" selection-end-line="365" selection-end-column="239" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/FruitSelectionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="871">
-          <caret line="941" column="30" lean-forward="false" selection-start-line="941" selection-start-column="29" selection-end-line="941" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -2697,10 +2695,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="581" column="60" lean-forward="false" selection-start-line="581" selection-start-column="60" selection-end-line="581" selection-end-column="60" />
+        <state relative-caret-position="506">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2716,14 +2717,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="60" column="37" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        <state relative-caret-position="160">
+          <caret line="446" column="68" lean-forward="false" selection-start-line="446" selection-start-column="68" selection-end-line="446" selection-end-column="68" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sweekar/sample/FruitSelectionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="38" column="79" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="79" />
+          <folding>
+            <element signature="e#45457#45881#0" expanded="true" />
+            <element signature="e#45880#45881#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

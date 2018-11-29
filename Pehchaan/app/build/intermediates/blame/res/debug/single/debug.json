@@ -1036,6 +1036,10 @@
         "source": "/Users/akashsinghal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5e71778144274f4650302408509512f0/res/layout/abc_action_mode_bar.xml"
     },
     {
+        "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable_corn.png.flat",
+        "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/drawable/corn.png"
+    },
+    {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/akashsinghal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5e71778144274f4650302408509512f0/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
     },
@@ -1066,6 +1070,10 @@
     {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/menu_activity_main.xml.flat",
         "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/menu/activity_main.xml"
+    },
+    {
+        "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable_ladyfinger.png.flat",
+        "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/drawable/ladyfinger.png"
     },
     {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/layout_activity_fruit_selection_page.xml.flat",
@@ -1484,6 +1492,10 @@
         "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable_mushroom.png.flat",
+        "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/drawable/mushroom.png"
+    },
+    {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
@@ -1562,6 +1574,10 @@
     {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable_abc_spinner_textfield_background_material.xml.flat",
         "source": "/Users/akashsinghal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5e71778144274f4650302408509512f0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable_gilki.png.flat",
+        "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/drawable/gilki.png"
     },
     {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable-v21_abc_btn_colored_material.xml.flat",
@@ -1884,6 +1900,10 @@
         "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/layout/activity_send.xml"
     },
     {
+        "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable_turai.png.flat",
+        "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/drawable/turai.png"
+    },
+    {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable_design_password_eye.xml.flat",
         "source": "/Users/akashsinghal/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cf765bce719664f317c5b1a3cd05e4c8/res/drawable/design_password_eye.xml"
     },
@@ -1962,6 +1982,10 @@
     {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/akashsinghal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5e71778144274f4650302408509512f0/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable_masala.png.flat",
+        "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/drawable/masala.png"
     },
     {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -2154,6 +2178,10 @@
     {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
         "source": "/Users/akashsinghal/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/21a5c0c64fca5550e0349386137e11db/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable_moli.png.flat",
+        "source": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/src/main/res/drawable/moli.png"
     },
     {
         "merged": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/res/merged/debug/drawable-v21_avd_hide_password.xml.flat",

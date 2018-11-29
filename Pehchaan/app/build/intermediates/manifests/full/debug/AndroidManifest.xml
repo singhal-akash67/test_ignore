@@ -35,7 +35,6 @@
         android:label="Pehchaan"
         android:roundIcon="@drawable/pehchaan_icon"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <provider
             android:name="android.support.v4.content.FileProvider"
