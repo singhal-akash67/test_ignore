@@ -64,6 +64,10 @@ public class Register extends AppCompatActivity implements AutomaticMessageRead.
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, getResources().getStringArray(R.array.areastring));
         spinner.setAdapter(adapter);
         spinner.setSelection(0);
+        Spinner spinnerfortypeofvendor=(Spinner)findViewById(R.id.type);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, getResources().getStringArray(R.array.typeofvendor));
+        spinnerfortypeofvendor.setAdapter(adapter2);
+        spinnerfortypeofvendor.setSelection(0);
     }
     public void sendotp(View v)
     {
@@ -157,16 +161,21 @@ public class Register extends AppCompatActivity implements AutomaticMessageRead.
     public void forotpscreen(View v)/*If user enters otp manually*/
     {
         EditText otp=(EditText)findViewById(R.id.otp);
-       if(otp.getText().toString().equalsIgnoreCase(otpvalue)==false)
+      /* if(otp.getText().toString().equalsIgnoreCase(otpvalue)==false)
         {
             Toast.makeText(this, "Wrong otp", Toast.LENGTH_SHORT).show();
             return;
         }
         else {
+        */
             newhawker.isverified = 1;
             unregisterReceiver(br);
             setContentView(R.layout.finalregisterationscreen);
-        }
+        Spinner spinner=(Spinner)findViewById(R.id.experience);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, getResources().getStringArray(R.array.experiencestring));
+        spinner.setAdapter(adapter);
+        spinner.setSelection(0);
+        //}
     }
     public void next(View v)
     {
@@ -175,6 +184,7 @@ public class Register extends AppCompatActivity implements AutomaticMessageRead.
         EditText name = (EditText) findViewById(R.id.hawkername);
         EditText hawkerid=(EditText)findViewById(R.id.hawkerid);
         EditText mobile_number=(EditText)findViewById(R.id.phonenumber);
+        Spinner type=(Spinner)findViewById(R.id.type);
 
 
         if(hawkerid.getText().toString().equalsIgnoreCase(""))
@@ -197,7 +207,8 @@ public class Register extends AppCompatActivity implements AutomaticMessageRead.
         }
 
         else {
-            newhawker =new Hawker(hawkerid.getText().toString(),name.getText().toString(), area.getSelectedItem().toString(),mobile_number.getText().toString());
+            Log.e("SAd",type.getSelectedItem().toString());
+            newhawker =new Hawker(hawkerid.getText().toString(),name.getText().toString(), area.getSelectedItem().toString(),mobile_number.getText().toString(),type.getSelectedItem().toString());
             setContentView(R.layout.registerationpart2);
             sendotp(new View(this));
 

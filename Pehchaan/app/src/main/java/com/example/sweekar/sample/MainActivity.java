@@ -386,6 +386,55 @@ public class MainActivity extends AppCompatActivity implements ReferralFragment.
                   } else if (fruitsname.equalsIgnoreCase("dates")) {
                       imageView.setImageResource(R.drawable.dates);
 
+                  } else if(fruitsname.equalsIgnoreCase("karela")) {
+                      imageView.setImageResource(R.drawable.karela);
+
+                  }else if(fruitsname.equalsIgnoreCase("brinj")) {
+                      imageView.setImageResource(R.drawable.brinj);
+
+                  } else if(fruitsname.equalsIgnoreCase("beetroot")) {
+                      imageView.setImageResource(R.drawable.beetroot);
+
+                  } else if(fruitsname.equalsIgnoreCase("brocoulli")) {
+                      imageView.setImageResource(R.drawable.brocoulli);
+
+                  } else if(fruitsname.equalsIgnoreCase("cauliflower")) {
+                      imageView.setImageResource(R.drawable.cauliflower);
+
+                  }  else if(fruitsname.equalsIgnoreCase("chavli")) {
+                      imageView.setImageResource(R.drawable.chavli);
+
+                  } else if(fruitsname.equalsIgnoreCase("cabbage")) {
+                      imageView.setImageResource(R.drawable.cabbage);
+
+                  }else if(fruitsname.equalsIgnoreCase("carrot")) {
+                      imageView.setImageResource(R.drawable.carrot);
+
+                  }else if(fruitsname.equalsIgnoreCase("bottleguard")) {
+                      imageView.setImageResource(R.drawable.bottleguard);
+
+                  }else if(fruitsname.equalsIgnoreCase("drumstick")) {
+                      imageView.setImageResource(R.drawable.drumstick);
+
+                  }
+                  else if(fruitsname.equalsIgnoreCase("garlic")) {
+                      imageView.setImageResource(R.drawable.garlic);
+
+                  }
+                  else if(fruitsname.equalsIgnoreCase("green_peas")) {
+                      imageView.setImageResource(R.drawable.green_peas);
+
+                  }
+                  else if(fruitsname.equalsIgnoreCase("onion")) {
+                      imageView.setImageResource(R.drawable.onion);
+
+                  }
+                  else if(fruitsname.equalsIgnoreCase("mint")) {
+                      imageView.setImageResource(R.drawable.mint);
+
+                  }else if(fruitsname.equalsIgnoreCase("cucumber")) {
+                      imageView.setImageResource(R.drawable.cucumber);
+
                   }
                   imageView.setOnClickListener(new View.OnClickListener() {
                       @Override
@@ -521,7 +570,7 @@ public class MainActivity extends AppCompatActivity implements ReferralFragment.
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         String itemtitle = menuItem.getTitle().toString();
-                        if (itemtitle.equalsIgnoreCase("Main Page"))
+                        if (itemtitle.equalsIgnoreCase("Home"))
                         {
                             //Do NOthing
                         }
@@ -530,7 +579,7 @@ public class MainActivity extends AppCompatActivity implements ReferralFragment.
                             mDrawerLayout.closeDrawers();
                             startActivity(new Intent(MainActivity.this,EditableHawkerProfile.class));
                         }
-                        else if(itemtitle.equalsIgnoreCase("Fruit Selection"))
+                        else if(itemtitle.equalsIgnoreCase("Selection"))
                         {
                             mDrawerLayout.closeDrawers();
                             Intent fruitselection=new Intent(MainActivity.this,FruitSelectionPage.class);

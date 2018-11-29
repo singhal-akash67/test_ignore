@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/akash/AndroidStudioProjects/Disq/Pehchaan/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
+            "outputFile": "/Users/akashsinghal/Desktop/test_ignore/Pehchaan/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
             "map": [
                 {
-                    "source": "/home/akash/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cf77e1d21884a4f69c16d3e3f08f9867/res/values-pt/values-pt.xml",
+                    "source": "/Users/akashsinghal/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ab5c706c2956117ca8255ad01188f959/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/akash/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ffb3620c41ad1931ac1799db53579a4e/res/values-pt/values-pt.xml",
+                    "source": "/Users/akashsinghal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/5e71778144274f4650302408509512f0/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -86,8 +86,8 @@ tools:context="com.example.sweekar.sample.Register">
             android:layout_height="wrap_content"
             android:onClick="submit"
             android:layout_centerHorizontal="true"
-            android:background="#4ccccc"
+            android:background="#07938d"
             android:text="Submit"
             android:layout_alignParentBottom="true"
-            android:textColor="#000000" />
+            android:textColor="#ffffff" />
 </RelativeLayout>

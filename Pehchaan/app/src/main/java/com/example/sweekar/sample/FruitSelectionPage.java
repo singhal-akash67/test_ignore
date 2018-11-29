@@ -23,6 +23,7 @@ public class FruitSelectionPage extends AppCompatActivity {
     Set<String> e;
     Button submitfruits;
     int comingfromfruitselectionpage;
+    Databaseh db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,14 +37,18 @@ public class FruitSelectionPage extends AppCompatActivity {
         e=new HashSet<String>();
         e.add("garbage");
         Set<String> initialfruits=sharedPreferences.getStringSet("currentfruits",null);
-        LinearLayout linearLayout1 = new LinearLayout(this);
-        linearLayout1.setOrientation(LinearLayout.HORIZONTAL);
-        linearLayout1.setWeightSum(8.0f);
-        linearLayout1.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-        ImageView apple = new ImageView(this);
-        apple.setImageResource(R.drawable.apple);
-        apple.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
-        apple.setOnClickListener(new View.OnClickListener() {
+        db=new Databaseh(this);
+        Hawker currentHakwer=db.findHawker();
+        LinearLayout parent = (LinearLayout) findViewById(R.id.parent);
+        if(currentHakwer.typeOfVendor=="fruits") {
+            LinearLayout linearLayout1 = new LinearLayout(this);
+            linearLayout1.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayout1.setWeightSum(8.0f);
+            linearLayout1.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            ImageView apple = new ImageView(this);
+            apple.setImageResource(R.drawable.apple);
+            apple.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            apple.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     int i = addordeletefruits("apple");
@@ -54,9 +59,8 @@ public class FruitSelectionPage extends AppCompatActivity {
                     }
                 }
             });
-        linearLayout1.addView(apple);
-            if(initialfruits.contains("apple"))
-            {
+            linearLayout1.addView(apple);
+            if (initialfruits.contains("apple")) {
                 e.add("apple");
                 apple.setBackgroundResource(R.drawable.background);
             }
@@ -77,15 +81,14 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout1.addView(orange);
-        if(initialfruits.contains("orange"))
-        {
-            e.add("orange");
-            orange.setBackgroundResource(R.drawable.background);
-        }
-        ImageView chikoo = new ImageView(this);
-        chikoo.setImageResource(R.drawable.chikoo);
-        chikoo.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
-        chikoo.setOnClickListener(new View.OnClickListener() {
+            if (initialfruits.contains("orange")) {
+                e.add("orange");
+                orange.setBackgroundResource(R.drawable.background);
+            }
+            ImageView chikoo = new ImageView(this);
+            chikoo.setImageResource(R.drawable.chikoo);
+            chikoo.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            chikoo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     int i = addordeletefruits("chikoo");
@@ -98,11 +101,10 @@ public class FruitSelectionPage extends AppCompatActivity {
             });
 
             linearLayout1.addView(chikoo);
-        if(initialfruits.contains("chikoo"))
-        {
-            e.add("chikoo");
-            chikoo.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("chikoo")) {
+                e.add("chikoo");
+                chikoo.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView coconut = new ImageView(this);
             coconut.setImageResource(R.drawable.coconut);
@@ -121,13 +123,12 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout1.addView(coconut);
-        if(initialfruits.contains("coconut"))
-        {
-            e.add("coconut");
-            coconut.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("coconut")) {
+                e.add("coconut");
+                coconut.setBackgroundResource(R.drawable.background);
+            }
 
-            LinearLayout parent = (LinearLayout) findViewById(R.id.parent);
+
             parent.addView(linearLayout1);
 
 
@@ -153,11 +154,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout2.addView(banana);
-        if(initialfruits.contains("banana"))
-        {
-            e.add("banana");
-            banana.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("banana")) {
+                e.add("banana");
+                banana.setBackgroundResource(R.drawable.background);
+            }
             ImageView greengrapes = new ImageView(this);
             greengrapes.setImageResource(R.drawable.greengrapes);
             greengrapes.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
@@ -175,11 +175,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout2.addView(greengrapes);
-        if(initialfruits.contains("greengrapes"))
-        {
-            e.add("greengrapes");
-            greengrapes.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("greengrapes")) {
+                e.add("greengrapes");
+                greengrapes.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView mangoneelam = new ImageView(this);
             mangoneelam.setImageResource(R.drawable.mango_neelam);
@@ -198,11 +197,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout2.addView(mangoneelam);
-        if(initialfruits.contains("mango_neelam"))
-        {
-            e.add("mango_neelam");
-            mangoneelam.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("mango_neelam")) {
+                e.add("mango_neelam");
+                mangoneelam.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView mangohafus = new ImageView(this);
             mangohafus.setImageResource(R.drawable.mangohafus);
@@ -221,11 +219,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout2.addView(mangohafus);
-        if(initialfruits.contains("mangohafus"))
-        {
-            e.add("mangohafus");
-            mangohafus.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("mangohafus")) {
+                e.add("mangohafus");
+                mangohafus.setBackgroundResource(R.drawable.background);
+            }
             parent.addView(linearLayout2);
 
             LinearLayout linearLayout3 = new LinearLayout(this);
@@ -249,11 +246,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout3.addView(mangolangra);
-        if(initialfruits.contains("mangolangra"))
-        {
-            e.add("mangolangra");
-            mangolangra.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("mangolangra")) {
+                e.add("mangolangra");
+                mangolangra.setBackgroundResource(R.drawable.background);
+            }
             ImageView mangototapuri = new ImageView(this);
             mangototapuri.setImageResource(R.drawable.mangototapuri);
             mangototapuri.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
@@ -271,11 +267,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout3.addView(mangototapuri);
-        if(initialfruits.contains("mangototapuri"))
-        {
-            e.add("mangototapuri");
-            mangototapuri.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("mangototapuri")) {
+                e.add("mangototapuri");
+                mangototapuri.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView mangoda = new ImageView(this);
             mangoda.setImageResource(R.drawable.mangoda);
@@ -294,11 +289,10 @@ public class FruitSelectionPage extends AppCompatActivity {
 
                 }
             });
-        if(initialfruits.contains("mangoda"))
-        {
-            e.add("mangoda");
-            mangoda.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("mangoda")) {
+                e.add("mangoda");
+                mangoda.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView mangopa = new ImageView(this);
             mangopa.setImageResource(R.drawable.mangopa);
@@ -317,11 +311,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout3.addView(mangopa);
-        if(initialfruits.contains("mangopa"))
-        {
-            e.add("mangopa");
-            mangopa.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("mangopa")) {
+                e.add("mangopa");
+                mangopa.setBackgroundResource(R.drawable.background);
+            }
             parent.addView(linearLayout3);
 
 
@@ -347,11 +340,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout4.addView(mangoke);
-        if(initialfruits.contains("mangoke"))
-        {
-            e.add("mangoke");
-            mangoke.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("mangoke")) {
+                e.add("mangoke");
+                mangoke.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView proe = new ImageView(this);
             proe.setImageResource(R.drawable.proe);
@@ -370,11 +362,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout4.addView(proe);
-        if(initialfruits.contains("proe"))
-        {
-            e.add("proe");
-            proe.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("proe")) {
+                e.add("proe");
+                proe.setBackgroundResource(R.drawable.background);
+            }
             ImageView guava = new ImageView(this);
             guava.setImageResource(R.drawable.gauva);
             guava.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
@@ -392,11 +383,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout4.addView(guava);
-        if(initialfruits.contains("gauva"))
-        {
-            e.add("gauva");
-            guava.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("gauva")) {
+                e.add("gauva");
+                guava.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView watermelon = new ImageView(this);
             watermelon.setImageResource(R.drawable.watermelon);
@@ -415,11 +405,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout4.addView(watermelon);
-        if(initialfruits.contains("watermelon"))
-        {
-            e.add("watermelon");
-            watermelon.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("watermelon")) {
+                e.add("watermelon");
+                watermelon.setBackgroundResource(R.drawable.background);
+            }
             parent.addView(linearLayout4);
 
             LinearLayout linearLayout5 = new LinearLayout(this);
@@ -444,11 +433,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout5.addView(muskmellon);
-        if(initialfruits.contains("muskmelon"))
-        {
-            e.add("muskmelon");
-            muskmellon.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("muskmelon")) {
+                e.add("muskmelon");
+                muskmellon.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView kiwi = new ImageView(this);
             kiwi.setImageResource(R.drawable.kiwi);
@@ -467,11 +455,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout5.addView(kiwi);
-        if(initialfruits.contains("kiwi"))
-        {
-            e.add("kiwi");
-            kiwi.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("kiwi")) {
+                e.add("kiwi");
+                kiwi.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView litchi = new ImageView(this);
             litchi.setImageResource(R.drawable.litchi);
@@ -490,11 +477,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout5.addView(litchi);
-        if(initialfruits.contains("litchi"))
-        {
-            e.add("litchi");
-            litchi.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("litchi")) {
+                e.add("litchi");
+                litchi.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView mangoba = new ImageView(this);
             mangoba.setImageResource(R.drawable.mangoba);
@@ -513,11 +499,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout5.addView(mangoba);
-        if(initialfruits.contains("mangoba"))
-        {
-            e.add("mangoba");
-            mangoba.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("mangoba")) {
+                e.add("mangoba");
+                mangoba.setBackgroundResource(R.drawable.background);
+            }
             parent.addView(linearLayout5);
 
 
@@ -543,11 +528,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout6.addView(peer);
-        if(initialfruits.contains("peer"))
-        {
-            e.add("peer");
-            peer.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("peer")) {
+                e.add("peer");
+                peer.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView plum = new ImageView(this);
             plum.setImageResource(R.drawable.plum);
@@ -566,11 +550,10 @@ public class FruitSelectionPage extends AppCompatActivity {
                 }
             });
             linearLayout6.addView(plum);
-        if(initialfruits.contains("plum"))
-        {
-            e.add("plum");
-            plum.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("plum")) {
+                e.add("plum");
+                plum.setBackgroundResource(R.drawable.background);
+            }
 
             ImageView dates = new ImageView(this);
             dates.setImageResource(R.drawable.dates);
@@ -590,12 +573,343 @@ public class FruitSelectionPage extends AppCompatActivity {
             });
             linearLayout6.addView(dates);
 
-        if(initialfruits.contains("dates"))
-        {
-            e.add("dates");
-            dates.setBackgroundResource(R.drawable.background);
-        }
+            if (initialfruits.contains("dates")) {
+                e.add("dates");
+                dates.setBackgroundResource(R.drawable.background);
+            }
             parent.addView(linearLayout6);
+        }
+        else {
+
+            LinearLayout linearLayout1 = new LinearLayout(this);
+            linearLayout1.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayout1.setWeightSum(8.0f);
+            linearLayout1.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            ImageView beetroot = new ImageView(this);
+            beetroot.setImageResource(R.drawable.beetroot);
+            beetroot.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            beetroot.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("beetroot");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+                }
+            });
+            linearLayout1.addView(beetroot);
+            if (initialfruits.contains("beetroot")) {
+                e.add("beetroot");
+                beetroot.setBackgroundResource(R.drawable.background);
+            }
+            ImageView bottleguard = new ImageView(this);
+            bottleguard.setImageResource(R.drawable.bottleguard);
+            bottleguard.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            bottleguard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("bottleguard");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout1.addView(bottleguard);
+            if (initialfruits.contains("bottleguard")) {
+                e.add("bottleguard");
+                bottleguard.setBackgroundResource(R.drawable.background);
+            }
+            ImageView brinj = new ImageView(this);
+            brinj.setImageResource(R.drawable.brinj);
+            brinj.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            brinj.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("brinj");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+                }
+            });
+
+            linearLayout1.addView(brinj);
+            if (initialfruits.contains("brinj")) {
+                e.add("brinj");
+                brinj.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView brocoulli = new ImageView(this);
+            brocoulli.setImageResource(R.drawable.brocoulli);
+            brocoulli.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            brocoulli.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("brocoulli");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout1.addView(brocoulli);
+            if (initialfruits.contains("brocoulli")) {
+                e.add("brocoulli");
+                brocoulli.setBackgroundResource(R.drawable.background);
+            }
+
+
+            parent.addView(linearLayout1);
+
+
+            LinearLayout linearLayout2 = new LinearLayout(this);
+            linearLayout2.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayout2.setWeightSum(8.0f);
+            linearLayout2.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+            ImageView cabbage = new ImageView(this);
+            cabbage.setImageResource(R.drawable.cabbage);
+            cabbage.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            cabbage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("cabbage");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout2.addView(cabbage);
+            if (initialfruits.contains("cabbage")) {
+                e.add("cabbage");
+                cabbage.setBackgroundResource(R.drawable.background);
+            }
+            ImageView carrot = new ImageView(this);
+            carrot.setImageResource(R.drawable.carrot);
+            carrot.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            carrot.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("carrot");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout2.addView(carrot);
+            if (initialfruits.contains("carrot")) {
+                e.add("carrot");
+                carrot.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView cauliflower = new ImageView(this);
+            cauliflower.setImageResource(R.drawable.cauliflower);
+            cauliflower.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            cauliflower.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("cauliflower");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout2.addView(cauliflower);
+            if (initialfruits.contains("cauliflower")) {
+                e.add("cauliflower");
+                cauliflower.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView chavli = new ImageView(this);
+            chavli.setImageResource(R.drawable.chavli);
+            chavli.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            chavli.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("chavli");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout2.addView(chavli);
+            if (initialfruits.contains("chavli")) {
+                e.add("chavli");
+                chavli.setBackgroundResource(R.drawable.background);
+            }
+            parent.addView(linearLayout2);
+
+            LinearLayout linearLayout3 = new LinearLayout(this);
+            linearLayout3.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayout3.setWeightSum(8.0f);
+            linearLayout3.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+            ImageView drumstick = new ImageView(this);
+            drumstick.setImageResource(R.drawable.drumstick);
+            drumstick.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            drumstick.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("drumstick");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+                }
+            });
+            linearLayout3.addView(drumstick);
+            if (initialfruits.contains("drumstick")) {
+                e.add("drumstick");
+                drumstick.setBackgroundResource(R.drawable.background);
+            }
+            ImageView garlic = new ImageView(this);
+            garlic.setImageResource(R.drawable.garlic);
+            garlic.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            garlic.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("garlic");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout3.addView(garlic);
+            if (initialfruits.contains("garlic")) {
+                e.add("garlic");
+                garlic.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView green_peas = new ImageView(this);
+            green_peas.setImageResource(R.drawable.green_peas);
+            green_peas.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            linearLayout3.addView(green_peas);
+            green_peas.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("green_peas");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            if (initialfruits.contains("green_peas")) {
+                e.add("green_peas");
+                green_peas.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView karela = new ImageView(this);
+            karela.setImageResource(R.drawable.karela);
+            karela.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            karela.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("karela");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout3.addView(karela);
+            if (initialfruits.contains("karela")) {
+                e.add("karela");
+                karela.setBackgroundResource(R.drawable.background);
+            }
+            parent.addView(linearLayout3);
+
+
+            LinearLayout linearLayout4 = new LinearLayout(this);
+            linearLayout4.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayout4.setWeightSum(8.0f);
+            linearLayout4.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+            ImageView mint = new ImageView(this);
+            mint.setImageResource(R.drawable.mint);
+            mint.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            mint.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("mint");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout4.addView(mint);
+            if (initialfruits.contains("mint")) {
+                e.add("mint");
+                mint.setBackgroundResource(R.drawable.background);
+            }
+
+            ImageView onion = new ImageView(this);
+            onion.setImageResource(R.drawable.onion);
+            onion.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 2.0f));
+            onion.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int i = addordeletefruits("onion");
+                    if (i == 0) {
+                        view.setBackgroundColor(Color.TRANSPARENT);
+
+                    } else {
+                        view.setBackgroundResource(R.drawable.background);
+                    }
+
+                }
+            });
+            linearLayout4.addView(onion);
+            if (initialfruits.contains("onion")) {
+                e.add("onion");
+                onion.setBackgroundResource(R.drawable.background);
+            }
+
+            parent.addView(linearLayout4);
+
+        }
 
     }
     public int addordeletefruits(String a)
@@ -609,6 +923,10 @@ public class FruitSelectionPage extends AppCompatActivity {
        {
            submitfruits.setEnabled(false);
            submitfruits.setAlpha((float) 0.5);
+       }
+       else{
+           submitfruits.setEnabled(true);
+           submitfruits.setAlpha(1);
        }
        return 0;
       }

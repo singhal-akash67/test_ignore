@@ -28,6 +28,13 @@
         <item>15 वर्षापेक्षा कमी</item>
         <item>15 वर्षांपेक्षा अधिक</item>
     </string-array>
+
+
+    <string-array name="typeofvendor">
+        <item>vegetable</item>
+        <item>fruit</item>
+
+    </string-array>
     <string name="title_activity_night_alarm">NightAlarm</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_editable_hawker_profile">EditableHawkerProfile</string>

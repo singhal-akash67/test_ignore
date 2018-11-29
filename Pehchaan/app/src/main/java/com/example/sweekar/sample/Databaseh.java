@@ -46,6 +46,7 @@ public class Databaseh extends SQLiteOpenHelper {
     private static final String KEY_Estimated_Total_Customers="total_estimated_customers";
     private static final String KEY_Estimated_Repeat_Customers="total_estimated_repeat_customers";
     private static final String KEY_IS_Verified="IS_Verified";
+    private static final String KEY_TYPE_OF_VENDOR="type_of_vendor";
 
     //Customer Table
 //unused
@@ -96,7 +97,7 @@ public class Databaseh extends SQLiteOpenHelper {
 
         String CREATE_Hawker_Table="CREATE TABLE "+ KEY_Hawker_Table+"("+
                 KEY_HAWKER_ID +" TEXT,"+Key_Name+" TEXT,"+KEY_location+" TEXT,"+KEY_number+
-                " TEXT,"+KEY_IS_Verified+" INTEGER DEFAULT 0,"+KEY_Gender+" TEXT,"+KEY_Experience+" TEXT,"+KEY_Estimated_Total_Customers+" INTEGER,"+KEY_Estimated_Repeat_Customers+" INTEGER"+")";
+                " TEXT,"+KEY_IS_Verified+" INTEGER DEFAULT 0,"+KEY_Gender+" TEXT,"+KEY_Experience+" TEXT,"+KEY_Estimated_Total_Customers+" INTEGER,"+KEY_Estimated_Repeat_Customers+" INTEGER,"+KEY_TYPE_OF_VENDOR+" TEXT"+")";
         db.execSQL(CREATE_Hawker_Table);
     }
 
@@ -361,8 +362,8 @@ public class Databaseh extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         String sql="INSERT INTO "+KEY_Hawker_Table+"("+KEY_HAWKER_ID+","+Key_Name+","+
                 KEY_location+","+KEY_number+","+KEY_IS_Verified+","+KEY_Gender+
-        ","+KEY_Experience+","+KEY_Estimated_Total_Customers+","+KEY_Estimated_Repeat_Customers+") VALUES('"+hawker.hawkerid+"','"+
-                hawker.hawkername+"','"+hawker.area+"','"+hawker.phonenumber+"',"+hawker.isverified+",'"+hawker.gender+"','"+hawker.experiece+"',"+hawker.totalexpectedcustomers+","+hawker.repeatexpectedcustomers+")";
+        ","+KEY_Experience+","+KEY_Estimated_Total_Customers+","+KEY_Estimated_Repeat_Customers+","+KEY_TYPE_OF_VENDOR+") VALUES('"+hawker.hawkerid+"','"+
+                hawker.hawkername+"','"+hawker.area+"','"+hawker.phonenumber+"',"+hawker.isverified+",'"+hawker.gender+"','"+hawker.experiece+"',"+hawker.totalexpectedcustomers+","+hawker.repeatexpectedcustomers+",'"+hawker.typeOfVendor+"')";
         db.execSQL(sql);
     }
   /*
@@ -388,7 +389,7 @@ public class Databaseh extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery(query,null);
         if (cursor.moveToFirst()) {
             do {
-                return new Hawker(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getInt(4),cursor.getString(5),cursor.getString(6),cursor.getInt(7),cursor.getInt(8));
+                return new Hawker(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getInt(4),cursor.getString(5),cursor.getString(6),cursor.getInt(7),cursor.getInt(8),cursor.getString(9));
             } while (cursor.moveToNext());
         }
         return null;
